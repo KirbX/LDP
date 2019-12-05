@@ -1,0 +1,14 @@
+<ActionBar>
+    <Label text="View"></Label>
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="tasks">
+        <ng-template let-item="item">
+            <Docklayout orientation="horizontal">
+                <Button text="del" dock="left" (tap)="onRemove(item)" style="background-color: red;"></Button>
+                <Label [nsRouterLink]="['../item', item.id]" [text]="item.name + ' ' + item.priority" dock="left"></Label>
+            </Docklayout>
+        </ng-template>
+    </ListView>
+</GridLayout>

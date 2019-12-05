@@ -1,0 +1,25 @@
+<BottomNavigation>
+    <TabStrip>
+        <TabStripItem >
+            <Label text="Random"></Label>
+        </TabStripItem>
+        <TabStripItem >
+            <Label text="View"></Label>
+        </TabStripItem>
+        <TabStripItem >
+            <Label text="Add"></Label>
+        </TabStripItem>
+    </TabStrip>
+
+    <TabContentItem>
+        <page-router-outlet name="randomTab"></page-router-outlet>
+    </TabContentItem>
+
+    <TabContentItem>
+        <page-router-outlet name="viewTab"></page-router-outlet>
+    </TabContentItem>
+
+    <TabContentItem>
+        <page-router-outlet name="addTab"></page-router-outlet>
+    </TabContentItem>
+</BottomNavigation>

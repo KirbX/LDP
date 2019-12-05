@@ -1,0 +1,8 @@
+<StackLayout class="form">
+    <TextField hint="Task name" [(ngModel)]="_name"></TextField>
+    <TextField hint="Priority(number)" keyboardType="number" [(ngModel)]="_priority"></TextField>
+    <GridLayout rows="auto" columns="*">
+        <Button text="Cancel" class="cancelButton" row="0" horizontalAlignment="left" (tap)="cancel()"></Button>
+        <Button text="OK" class="okButton" row="0" horizontalAlignment="right" (tap)="save()"></Button>
+    </GridLayout>
+</StackLayout>

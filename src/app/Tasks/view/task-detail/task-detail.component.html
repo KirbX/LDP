@@ -1,0 +1,9 @@
+<ActionBar>
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" [nsRouterLink]="['/']"></NavigationButton>
+    <Label [text]="item.name"></Label>
+</ActionBar>
+
+<GridLayout rows="auto, *" columns="*" orientation="horizontal">
+    <Label text="Priority : " row ="0" horizontalAlignment="left"></Label>
+    <Label [text]="item.priority" row="0" col="0" horizontalAlignment="center" textWrap="true"></Label>
+</GridLayout>
